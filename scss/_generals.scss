@@ -1,7 +1,17 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
 :root {
   --primary: #ea625c;
   --text-color: #777777;
+}
+.container {
+  margin: 10px 90px;
+  max-width: 1250px;
+}
+*:focus {
+  outline: 2px dashed var(--primary);
 }
