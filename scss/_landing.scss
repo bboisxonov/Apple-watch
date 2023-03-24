@@ -54,3 +54,104 @@
 }
 
 //HERO PART
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  &-left {
+    width: 490px;
+    &-title {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 120%;
+      color: #000000;
+    }
+    &-desc {
+      font-size: 16px;
+      line-height: 150%;
+      color: #777777;
+      padding-left: 40px;
+      border-left: 3px solid #888888;
+      margin-bottom: 30px;
+    }
+  }
+  &-right {
+    background: url("../img/watches.png") no-repeat;
+    width: 600px;
+    height: 600px;
+    background-size: contain;
+    margin-right: -200px;
+  }
+}
+
+//Section 2 (CARDS)
+
+.section2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0;
+}
+.card {
+  width: 280px;
+  &-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #222222;
+  }
+  &-desc {
+    font-size: 15px;
+    line-height: 160%;
+    color: #333333;
+  }
+  &-divider {
+    width: 8px;
+    height: 8px;
+    background: #dddddd;
+    box-shadow: 16px 0 0 0 #dddddd, 32px 0 0 0 #dddddd;
+  }
+  &-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: var(--primary);
+  }
+  &-link::before {
+    height: 3px;
+    width: 60px;
+    background-color: var(--primary);
+    content: "";
+  }
+}
+
+//SECTION 3
+
+.section3 {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &-right {
+    background: url("../img/watch-in-hand.png") no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 599.93px;
+  }
+}
+
+//SECTION 4
+.section4 {
+  padding: 240px 0;
+  background-image: url("../img/runners.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  &-info {
+    margin-left: auto;
+  }
+}
